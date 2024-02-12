@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <title>New portfolio site</title>
+  <link rel="shortcut icon" href="./img/VM.png">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <!-- Add your logo here -->
+    <img src="./img/VM.png" class="page-header_item" alt="my logo for the portfolio website">
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a aria-label="about-me" href="about.html" role="menuitem" class="navigation-list__item">About</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <!-- Form -->
+  <h1>Contact Me</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required />
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+    <br>
+    <label for="telephone-number">Tel#:</label>
+    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone-number" />
+    <br>
+    <label for="message">Leave a message:</label>
+    <br>
+    <textarea maxlength="240" id="send" required></textarea>
+    <br>
+    <button type="submit" id="button">Send message</button>
+  </form>
+  <div>
+    <p>Contact Details:</p>
+    Tel: <a href="tel:+47 483 43 842" aria-label="Call us at +47 483 43 842"> +47 483 43 842</a><br>
+    Skype: <a href="skype:errorks7"> errorks7</a><br>
+    Email: <a href="mailto:errorks7@gmail.com">errorks7@gmail.com</a>
+  </div>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social media">
+      <a href="#" target="_blank"><img src="img/Github.svg" alt="Github"></a>
+      <a href="#" target="_blank"><img src="img/Twitter.svg" alt="Twitter"></a>
+      <a href="#" target="_blank"><img src="img/Linkedin.svg" alt="LinkedIn"></a>
+    </div>
+    <a href="#">Back to the top</a>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

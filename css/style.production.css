@@ -1,0 +1,402 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* General styles */
+
+:root {
+  --color: #000000;
+  --bg-color: #ffffff;
+  --lightseagreen: #20b2aa;
+  --color: #191970;
+  --scale: 1.05;
+}
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color:var(--color);
+  background-color:var(--bg-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  padding: 10px;
+  margin: 10px;
+  border: 1px;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-style: italic;
+  color: black;
+  font-weight: 700;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a {
+  color:var(--lightseagreen);
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: var(--lightseagreen);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: var(#191970);
+}
+
+/* Buttons */
+
+button {
+  border: none;
+  font-family: inherit;
+  background-color: #8a2be2;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(139, 236, 229, 0.2);
+  -webkit-transition: background-color 1s, opacity 0.3s ease, -webkit-transform 0.5s;
+  transition: background-color 1s, opacity 0.3s ease, -webkit-transform 0.5s;
+  -o-transition: background-color 1s, transform 0.5s, opacity 0.3s ease;
+  transition: background-color 1s, transform 0.5s, opacity 0.3s ease;
+  transition: background-color 1s, transform 0.5s, opacity 0.3s ease, -webkit-transform 0.5s;
+}
+
+button:hover,
+button:focus,
+.button:focus,
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Page header styling, flexbox. */
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70px;
+          flex: 0 1 70px;
+}
+
+.page-header_item:first-child {
+  width: 200px;
+  height: 70px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+/* Navigation list styling. */
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Footer styling. */
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.page-footer p {
+  margin-top: 5%;
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+/* Profile section styling, home page. */
+
+.profile {
+  max-width: 700px;
+  margin: 10% auto;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.profile_portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  margin-top: 25px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.profile_portrait:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.profile_intro {
+  text-align: center;
+}
+
+.profile_intro a {
+  margin-top: 5%;
+}
+
+/* About page */
+
+.about-me {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  -webkit-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+}
+
+.about-me p {
+  margin-bottom: 3%;
+  -webkit-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+}
+
+/* Adjust the table styles for better responsiveness */
+
+table {
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 5% auto;
+  -webkit-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+}
+
+/* Make the table responsive */
+
+@media all and (max-width: 700px) {
+  table {
+    margin: 5% 10%;
+  }
+}
+
+/* Work Page Grid */
+
+.project-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0;
+  -webkit-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+}
+
+.project-list__item {
+  background-color: #c1c1b3;
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.project-list_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #20b2aa;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.project-list__item:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.project-list__item:hover .project-list_overlay {
+  opacity: 1;
+}
+
+/* Other existing styles remain unchanged */
+
+@media all and (max-width: 500px) {
+  .project-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 850px) {
+  /* Your existing media query styles */
+}
+
+@media all and (max-width: 850px) {
+  /* Your existing media query styles */
+  .project-list {
+    grid-gap: 15px;
+  }
+  .project-list__item:first-child,
+  .project-list__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* contact form animation */
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation: 23s cloud-move infinite alternate linear;
+          animation: 23s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  -webkit-animation: 45s cloud-move-reverse infinite alternate linear;
+          animation: 45s cloud-move-reverse infinite alternate linear;
+}
