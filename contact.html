@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Vadym Makohon</title>
   <link rel="shortcut icon" href="./img/VM.png">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,65 +16,60 @@
 </head>
 
 <body>
-  <header class="page-header box-shadow">
-    <a class="page-header__item" href="index.html">
-      <img src="./img/VM.png" class="page-header_item" alt="my logo for the portfolio website">
-    </a>
+  <header class="page-header">
+    <!-- Add your logo here -->
+    <img src="./img/VM.png" class="page-header_item" alt="my logo for the portfolio website">
     <nav class="page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
         </li>
         <li role="presentation">
-          <a aria-label="about-me" href="about.html" role="menuitem" class="navigation-list__item--active">About</a>
+          <a aria-label="about-me" href="about.html" role="menuitem" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
           <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
         </li>
         <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item">Contact</a>
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <div class="contact">
-      <h1 class="heading--light">Contact</h1>
-      <div class="contact-section box-shadow">
-        <form class="contact__item" action="submit-contact-form" method="post" id="contact-form">
-          <label class="standard-label required" for="contact-name">Name: </label>
-          <input type="text" id="contact-name" required>
-          <label class="standard-label required" for="contact-email">E-mail: </label>
-          <input type="email" id="contact-email" required>
-          <label class="standard-label" for="contact-telephone">Telephone: </label>
-          <input type="tel" id="contact-telephone">
-          <label class="standard-label required" for="message">Message: </label>
-          <textarea maxlength="240" id="message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <div class="contact__item my-contacts">
-          <p>Name<br>
-              City, State</p>
-          Phone: <a href="tel:+4748343842">+4748343842</a><br>
-          Email: <a href="mailto:errorks7@gmail.com">errorks7@gmail.com</a>
-          <br><br>
-          <a href="mailto:errorks7@gmail.com.com">Contact me</a>
+      <h1>Contact Me</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="telephone-number">Phone#:</label>
+        <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="telephone-number">
+        <br>
+        <label class="message">Message:</label>
+        <textarea maxlength="240" id="send" required></textarea>
+        <br>
+        <button type="submit" id="button">Send message</button>
+      </form>
+      <div class="contact__item my-contacts">
+        <p>Contact Details:</p>
+        Phone: <a href="tel:+4748343842" aria-label="Call us at +4748343842"> +4748343842</a><br>
+        Email: <a href="mailto:errorks7@gmail.com">errorks7@gmail.com</a>
+        <br><br>
       </div>
-  </div>
-</div>
-</main>
-  <footer class="page-footer">
-    <div class="find-me-text">
-      <p>Find me on</p>
     </div>
+  </main>
+  <footer class="page-footer">
+    <p>Find me on</p>
     <div class="social media">
       <a href="#" target="_blank"><img src="img/Github.svg" alt="Github"></a>
       <a href="#" target="_blank"><img src="img/Twitter.svg" alt="Twitter"></a>
       <a href="#" target="_blank"><img src="img/Linkedin.svg" alt="LinkedIn"></a>
     </div>
-    <div class="back-to-top">
-      <a class="back-to-top__button" href="#">Back to top</a>
-    </div>
+    <a href="#">Back to the top</a>
   </footer>
   <script src="js/tota11y.min.js"></script>
 </body>
