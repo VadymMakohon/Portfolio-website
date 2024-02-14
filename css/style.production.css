@@ -61,7 +61,7 @@ a:focus {
 }
 
 a:active {
-  color: var(--midnightblue);
+  color: var();
 }
 
 /* Buttons */
