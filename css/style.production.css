@@ -8,12 +8,13 @@
 /* General styles */
 
 :root {
-  --color: #000000;
-  --bg-color: #ffffff;
-  --lightseagreen: #20b2aa;
-  --color: #191970;
+  --color: #1e90ff; /* Dodger Blue */
+  --bg-color: #f0f8ff; /* Alice Blue */
+  --lightseagreen: #20b2aa; /* Light Sea Green */
+  --midnightblue: #191970; /* Midnight Blue */
   --scale: 1.05;
 }
+
 *{
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
