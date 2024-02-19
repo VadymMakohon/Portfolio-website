@@ -1,6 +1,6 @@
 alert('Hello world');
 
-let favouriteFood = stake;
+let favouriteFood = "stake";
 document.write (favouriteFood);
 //single line comment
 
