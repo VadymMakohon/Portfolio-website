@@ -19,13 +19,5 @@ This portfolio website serves as an interactive and visually appealing platform 
 - **HTML:** Structuring the content and layout of the website.
 - **CSS:** Styling the elements for a visually appealing presentation.
 - **JavaScript:** Enhancing interactivity and dynamic content on the website.
-
-## Getting Started
-
-To view the portfolio website locally, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/VadymMakohon/my-portfolio.git
    
 ![preview](https://github.com/VadymMakohon/Portfolio-website/assets/138728243/67f4f545-c8c1-4045-9955-7eeaec0ae37f)
