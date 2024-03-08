@@ -27,3 +27,5 @@ To view the portfolio website locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/VadymMakohon/my-portfolio.git
+   
+![preview](https://github.com/VadymMakohon/Portfolio-website/assets/138728243/67f4f545-c8c1-4045-9955-7eeaec0ae37f)
