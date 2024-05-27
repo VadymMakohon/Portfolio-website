@@ -21,3 +21,6 @@ This portfolio website serves as an interactive and visually appealing platform 
 - **JavaScript:** Enhancing interactivity and dynamic content on the website.
    
 ![preview](https://github.com/VadymMakohon/Portfolio-website/assets/138728243/67f4f545-c8c1-4045-9955-7eeaec0ae37f)
+
+# Contributors
+- [Vadym Makohon](https://github.com/VadymMakohon)
